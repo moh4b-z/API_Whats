@@ -14,7 +14,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const whatsRoutes = require("./routes/whatsRoutes")
+const whatsRoutes = require("./src/routes/whatsRoutes")
 app.use("/v1/whatsapp", whatsRoutes)
 
 
