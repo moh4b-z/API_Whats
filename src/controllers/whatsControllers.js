@@ -26,7 +26,7 @@ function getListUserProfileAccountData (request, response){
 }
 function getListContactDetailsForEachUser (request, response){
     let number = request.query.nu
-    let dados = functionsContatos.getListContactDetailsForEachUser(number)
+    let dados = whatsControllers.getListContactDetailsForEachUser(number)
 
     if(dados){
         response.status(200)
@@ -40,7 +40,7 @@ function getFilterAll (request, response){
     let number = request.query.nu
     let name = request.query.na
     let word = request.query.wo
-    let dados = functionsContatos.getFilterAll(number, name, word)
+    let dados = whatsControllers.getFilterAll(number, name, word)
 
     if(dados){
         response.status(200)
